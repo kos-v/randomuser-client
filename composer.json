@@ -1,0 +1,27 @@
+{
+  "name": "kosv/random-user",
+  "description": "Library for getting data from randomuser.me.",
+  "keywords": ["randomuser.me", "lib", "library","kosv"],
+  "homepage": "https://github.com/kos-v",
+  "type": "library",
+  "license": "MIT",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Konstantin Voloshchuk",
+      "email": "kosv.dev@gmail.com",
+      "homepage": "https://github.com/kos-v"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5 || ^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kosv\\RandomUser\\": "src/"
+    }
+  }
+}

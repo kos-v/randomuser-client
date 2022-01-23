@@ -2,6 +2,12 @@
 
 Simple library for getting data from [`randomuser.me`](https://randomuser.me/) service.
 
+## Installation
+
+```shell
+composer require kosv/randomuser-client:0.0.1
+```
+
 ## Example
 
 ```php

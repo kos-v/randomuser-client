@@ -16,16 +16,14 @@ composer require kosv/randomuser-client:0.0.1
 <?php
 
 use Kosv\RandomUser\Client\{Client, QueryBuilder, Response};
+use Kosv\RandomUser\Transport\CurlTransport;
 
-$client = new Client();
-$query = (new QueryBuilder())
-    ->setIncludeFields(['name', 'gender'])
-    ->setPage(3)
-    ->setMaxResult(100);
+$client = new Client(new CurlTransport());
 
-/** @var Response $response */
+$query = new QueryBuilder();
+$query->setIncludeFields(['name', 'email'])->setPage(3)->setMaxResult(100);
+
 $response = $client->request($query);
-
 $users = $response->getUsers();
 $info = $response->getInfo();
 

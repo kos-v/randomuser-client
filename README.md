@@ -15,7 +15,7 @@ composer require kosv/randomuser-client:0.0.1
 ```php
 <?php
 
-use Kosv\RandomUser\Client\{Client, QueryBuilder, Response};
+use Kosv\RandomUser\Client\{Client, QueryBuilder};
 use Kosv\RandomUser\Transport\CurlTransport;
 
 $client = new Client(new CurlTransport());

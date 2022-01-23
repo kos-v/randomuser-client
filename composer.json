@@ -1,5 +1,5 @@
 {
-  "name": "kosv/random-user",
+  "name": "kosv/randomuser-client",
   "description": "Library for getting data from randomuser.me.",
   "keywords": ["randomuser.me", "lib", "library","kosv"],
   "homepage": "https://github.com/kos-v",

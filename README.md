@@ -1,5 +1,7 @@
 # Randomuser.me Client
 
+[![Build Status](https://app.travis-ci.com/kos-v/randomuser-client.svg?branch=main)](https://app.travis-ci.com/kos-v/randomuser-client)
+
 Simple library for getting data from [`randomuser.me`](https://randomuser.me/) service.
 
 ## Installation

@@ -59,4 +59,12 @@ final class QueryBuilderTest extends TestCase
         $qb->setPage(3);
         $this->assertEquals('/?page=3', $qb->build()->build());
     }
+
+    public function testSetPasswordFormat(): void
+    {
+        $qb = new QueryBuilder();
+
+        $qb->setPasswordFormat(['upper', 'lower', '1-16']);
+        $this->assertEquals('/?password=upper,lower,1-16', $qb->build()->build());
+    }
 }

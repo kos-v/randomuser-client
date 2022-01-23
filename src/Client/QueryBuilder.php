@@ -66,4 +66,13 @@ final class QueryBuilder implements QueryBuilderInterface
         $this->url->setParam('page', [$page]);
         return $this;
     }
+
+    /**
+     * @return $this
+     */
+    public function setPasswordFormat(array $format)
+    {
+        $this->url->setParam('password', $format);
+        return $this;
+    }
 }

@@ -1,0 +1,10 @@
+build:
+    nodes:
+        analysis:
+            tests:
+                override:
+                    - php-scrutinizer-run
+
+filter:
+    dependency_paths:
+        - "vendor/"

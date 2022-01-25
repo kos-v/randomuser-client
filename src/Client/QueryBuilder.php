@@ -25,6 +25,15 @@ final class QueryBuilder implements QueryBuilderInterface
     /**
      * @return $this
      */
+    public function setExcludeFields(array $fields)
+    {
+        $this->url->setParam('exc', $fields);
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
     public function setGenderFilter(string $gender)
     {
         $this->url->setParam('gender', [$gender]);

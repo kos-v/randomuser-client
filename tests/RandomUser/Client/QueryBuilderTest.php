@@ -20,6 +20,14 @@ final class QueryBuilderTest extends TestCase
         $this->assertEquals('/?inc=gender,name&nat=us&results=100&page=3', $qb->build()->build());
     }
 
+    public function testSetExcludeFields(): void
+    {
+        $qb = new QueryBuilder();
+
+        $qb->setExcludeFields(['gender', 'name', 'nat']);
+        $this->assertEquals('/?exc=gender,name,nat', $qb->build()->build());
+    }
+
     public function testSetGenderFilter(): void
     {
         $qb = new QueryBuilder();

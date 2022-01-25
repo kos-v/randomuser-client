@@ -75,4 +75,12 @@ final class QueryBuilderTest extends TestCase
         $qb->setPasswordFormat(['upper', 'lower', '1-16']);
         $this->assertEquals('/?password=upper,lower,1-16', $qb->build()->build());
     }
+
+    public function testSetSeed(): void
+    {
+        $qb = new QueryBuilder();
+
+        $qb->setSeed('foobar');
+        $this->assertEquals('/?seed=foobar', $qb->build()->build());
+    }
 }

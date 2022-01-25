@@ -84,4 +84,13 @@ final class QueryBuilder implements QueryBuilderInterface
         $this->url->setParam('password', $format);
         return $this;
     }
+
+    /**
+     * @return $this
+     */
+    public function setSeed(string $name)
+    {
+        $this->url->setParam('seed', [$name]);
+        return $this;
+    }
 }

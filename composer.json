@@ -5,7 +5,6 @@
   "homepage": "https://github.com/kos-v/randomuser-client",
   "type": "library",
   "license": "MIT",
-  "version": "0.0.1",
   "authors": [
     {
       "name": "Konstantin Voloshchuk",

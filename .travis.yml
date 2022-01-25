@@ -2,7 +2,10 @@ language: php
 php:
     - "7.4"
     - "8.0"
+before_install:
+    - mkdir php-cs-fixer && composer require --working-dir=php-cs-fixer friendsofphp/php-cs-fixer
 install:
     - composer install
 script:
+    - php-cs-fixer/vendor/bin/php-cs-fixer fix --dry-run --verbose  --allow-risky=yes
     - phpunit

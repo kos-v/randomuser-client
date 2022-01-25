@@ -8,7 +8,7 @@ Simple library for getting data from [`randomuser.me`](https://randomuser.me/) s
 ## Installation
 
 ```shell
-composer require kosv/randomuser-client:0.0.1
+composer require kosv/randomuser-client:^1.0.0
 ```
 
 ## Example
